@@ -1,31 +1,22 @@
 //
-//  UserViewController.m
+//  MerchantInfoViewController.m
 //  RagialAlarm2.0
 //
-//  Created by Jimmy Ko on 2016-09-22.
+//  Created by Jimmy Ko on 2016-10-07.
 //  Copyright © 2016 mrjko. All rights reserved.
 //
 
-#import "UserViewController.h"
-#import "DBManager.h"
-#import "FMDatabase.h"
+#import "MerchantInfoViewController.h"
 
-@interface UserViewController ()
+@interface MerchantInfoViewController ()
 
-@property(nonatomic, weak) IBOutlet UITextView *header;
-@property(strong, nonatomic) DBManager *dbManager;
 @end
 
-@implementation UserViewController
+@implementation MerchantInfoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    self.header.delegate = self;
-    
-    self.header.text = [NSString stringWithFormat:@"Welcome, %@!", self.logged_in_user];
-    
 }
 
 - (void)didReceiveMemoryWarning {

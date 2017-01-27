@@ -7,8 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "ViewController.h"
 
 @interface RagialAlarm2_0Tests : XCTestCase
+
+@property ViewController *vc;
 
 @end
 
@@ -27,6 +30,9 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    _vc = [ViewController new];
+    
+    
 }
 
 - (void)testPerformanceExample {
